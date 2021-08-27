@@ -9,11 +9,15 @@ import UIKit
 
 class WelcomeViewController: UIViewController {
 
+    @IBOutlet weak var startChatButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Log In"
         view.backgroundColor = .white
         // Do any additional setup after loading the view.
+        self.startChatButton.layer.cornerRadius = self.startChatButton.frame.height/2
+        
     }
     
 

@@ -9,10 +9,12 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
+    @IBOutlet weak var chatWithAnnieButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        self.chatWithAnnieButton.layer.cornerRadius = self.chatWithAnnieButton.frame.height/2
     }
     
 

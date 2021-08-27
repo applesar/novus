@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class RegisterViewController: UIViewController {
 
@@ -20,6 +21,8 @@ class RegisterViewController: UIViewController {
     @IBOutlet weak var signUpButton: UIButton!
     
     @IBOutlet weak var errorLabel: UILabel!
+    
+    @IBOutlet weak var loginSegueButton: UIButton!
     
     @IBAction func signUpTapped(_ sender: Any) {
     }

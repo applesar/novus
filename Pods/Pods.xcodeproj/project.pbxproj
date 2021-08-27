@@ -93,7 +93,6 @@
 		2B0F05A3DBDE8E8AD6A8511F035D63D3 /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
 		333DAB6EC98A071AAD9A29C41818F346 /* HTTPHeaders.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPHeaders.swift; path = Source/HTTPHeaders.swift; sourceTree = "<group>"; };
 		349B2325F6647FEE3C9209201FF5D4C2 /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
-		37AF745E84D45F1F90DA43C1AB835082 /* Pods-novus-novusUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-novus-novusUITests-Info.plist"; sourceTree = "<group>"; };
 		3C48B734304FBF34474EE484CC82DE82 /* Pods_novus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_novus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		401A0C3C3516540407583753D10DEB2B /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
 		4388F96485F322CF010F9CA6AF089C46 /* HTTPMethod.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPMethod.swift; path = Source/HTTPMethod.swift; sourceTree = "<group>"; };
@@ -121,7 +120,6 @@
 		7D775AEBA7F44F990BC06AAB2A1500E9 /* Pods-novus-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-novus-umbrella.h"; sourceTree = "<group>"; };
 		845043F6DD76EF451A61A8C4EEB3BF6C /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
 		84B14ACFFB6A91762B582B46A3466A3F /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
-		859700CFE455A470B743CD6DDF5EDDF2 /* Pods-novus-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-novus-Info.plist"; sourceTree = "<group>"; };
 		876F4F5D5DA538F51C4D4F27C9F64377 /* OperationQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "OperationQueue+Alamofire.swift"; path = "Source/OperationQueue+Alamofire.swift"; sourceTree = "<group>"; };
 		8B79EBEE865BF4BE17A393E1BFFEB008 /* Pods-novusTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-novusTests.modulemap"; sourceTree = "<group>"; };
 		8D3D57353834825F7B52B816066B7789 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
@@ -138,7 +136,6 @@
 		B0EBFC4256A48F45E26B860D38479E52 /* Combine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Combine.swift; path = Source/Combine.swift; sourceTree = "<group>"; };
 		B4B8687B00F57762F34D3282826817C5 /* RequestTaskMap.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestTaskMap.swift; path = Source/RequestTaskMap.swift; sourceTree = "<group>"; };
 		B5DA36ADD8B0E94CE139C28448821E13 /* AuthenticationInterceptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AuthenticationInterceptor.swift; path = Source/AuthenticationInterceptor.swift; sourceTree = "<group>"; };
-		B9EAB5F05195E76F044299396F73F9D5 /* Pods-novusTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-novusTests-Info.plist"; sourceTree = "<group>"; };
 		BCC350EEADBAF761D20138C94C4A0086 /* URLConvertible+URLRequestConvertible.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLConvertible+URLRequestConvertible.swift"; path = "Source/URLConvertible+URLRequestConvertible.swift"; sourceTree = "<group>"; };
 		BF0F0C60D8800EF9842189E2B398A66B /* Pods-novus-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-novus-acknowledgements.markdown"; sourceTree = "<group>"; };
 		CA42C60633DFFC536E92EB9151DB9D93 /* Pods_novus_novusUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_novus_novusUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -151,7 +148,6 @@
 		E63D51B3F40EBB33748116E64D1F35D3 /* Pods-novus-novusUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-novus-novusUITests-frameworks.sh"; sourceTree = "<group>"; };
 		E6F1808FE5E7B3EAB4C8A1D39B456E0D /* Pods-novus-novusUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-novus-novusUITests.modulemap"; sourceTree = "<group>"; };
 		F43DFB0A067881554C0CF2E83093E1D6 /* AlamofireExtended.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlamofireExtended.swift; path = Source/AlamofireExtended.swift; sourceTree = "<group>"; };
-		F71BBCEF1586B8C48F6C090283FD70AA /* Alamofire-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Alamofire-Info.plist"; sourceTree = "<group>"; };
 		FA131E040DED89A515A76915DBFD91CE /* Pods-novusTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-novusTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		FA24B13480173106997D3F6538CDE3CD /* ServerTrustEvaluation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustEvaluation.swift; path = Source/ServerTrustEvaluation.swift; sourceTree = "<group>"; };
 		FB5402EE1EDCDA2C294783083A6986D7 /* Pods-novusTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-novusTests-dummy.m"; sourceTree = "<group>"; };
@@ -212,7 +208,6 @@
 				9FA24C0935349637958624AAAF743E3C /* Pods-novus-novusUITests-acknowledgements.plist */,
 				7B116646589E3656406C40CF6292CBE8 /* Pods-novus-novusUITests-dummy.m */,
 				E63D51B3F40EBB33748116E64D1F35D3 /* Pods-novus-novusUITests-frameworks.sh */,
-				37AF745E84D45F1F90DA43C1AB835082 /* Pods-novus-novusUITests-Info.plist */,
 				14A0C2B742487893820F0BA8B8E052E8 /* Pods-novus-novusUITests-umbrella.h */,
 				6E2564F6B8309CB23C739A339D42F93A /* Pods-novus-novusUITests.debug.xcconfig */,
 				7CAC994818C6358CE157EB4E5746C2E7 /* Pods-novus-novusUITests.release.xcconfig */,
@@ -228,7 +223,6 @@
 				FA131E040DED89A515A76915DBFD91CE /* Pods-novusTests-acknowledgements.markdown */,
 				1FFF3323B20664D644792583BE2396CC /* Pods-novusTests-acknowledgements.plist */,
 				FB5402EE1EDCDA2C294783083A6986D7 /* Pods-novusTests-dummy.m */,
-				B9EAB5F05195E76F044299396F73F9D5 /* Pods-novusTests-Info.plist */,
 				44B6123218FE9C7A78DDBC0669424F20 /* Pods-novusTests-umbrella.h */,
 				E15F34E58E07E8761A79A8E2C4F4008C /* Pods-novusTests.debug.xcconfig */,
 				14A65397E778AD15AC0E3FADFB905EF2 /* Pods-novusTests.release.xcconfig */,
@@ -242,7 +236,6 @@
 			children = (
 				79BFAE4F0928F95479DE70C637654FC5 /* Alamofire.modulemap */,
 				DFC11D87B8E53578044EA373E7DE6642 /* Alamofire-dummy.m */,
-				F71BBCEF1586B8C48F6C090283FD70AA /* Alamofire-Info.plist */,
 				2B0F05A3DBDE8E8AD6A8511F035D63D3 /* Alamofire-prefix.pch */,
 				845043F6DD76EF451A61A8C4EEB3BF6C /* Alamofire-umbrella.h */,
 				4D3E0E1E34DD4394C6023B622C262222 /* Alamofire.debug.xcconfig */,
@@ -312,7 +305,6 @@
 				D970D99B08679D352A35BD7BC5A4827A /* Pods-novus-acknowledgements.plist */,
 				9ED6F5FF61CE010CB59B6A70A605A777 /* Pods-novus-dummy.m */,
 				E0795EC46749F23F529B5FECD2E3E1EF /* Pods-novus-frameworks.sh */,
-				859700CFE455A470B743CD6DDF5EDDF2 /* Pods-novus-Info.plist */,
 				7D775AEBA7F44F990BC06AAB2A1500E9 /* Pods-novus-umbrella.h */,
 				6E72837C0EEA00ACDC7DFB428060C8C6 /* Pods-novus.debug.xcconfig */,
 				AC21DC11BC1C6E0EB32F65810008C58F /* Pods-novus.release.xcconfig */,
