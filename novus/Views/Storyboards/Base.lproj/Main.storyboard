@@ -77,19 +77,78 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Annie" translatesAutoresizingMaskIntoConstraints="NO" id="meh-0U-CpT">
-                                <rect key="frame" x="87" y="281" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Annie2" translatesAutoresizingMaskIntoConstraints="NO" id="Cv6-5k-eP4">
+                                <rect key="frame" x="22.5" y="299" width="369" height="197"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Cv6-5k-eP4" secondAttribute="height" multiplier="15:8" id="BJW-Ul-fVX"/>
+                                </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome Text" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rpg-sJ-bk0">
+                                <rect key="frame" x="96.5" y="218" width="221" height="41"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
+                                <color key="textColor" red="0.062745098039215685" green="0.090196078431372548" blue="0.19215686274509802" alpha="0.89803921568627454" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meet Annie" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bOn-RU-qOZ">
+                                <rect key="frame" x="143.5" y="536" width="127" height="29"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <color key="textColor" red="0.062745098039215685" green="0.090196078431372548" blue="0.19215686274509802" alpha="0.89803921568627454" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="An expert system in-house" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dva-cI-di1">
+                                <rect key="frame" x="99.5" y="570" width="215.5" height="21.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" red="0.47843137254901957" green="0.49019607843137253" blue="0.52549019607843139" alpha="0.89803921568627454" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Disclaimer: Patient was not seen or examined. This app is not intended for use in diagnosis of diseases or other conditions." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VPO-mC-OjY">
+                                <rect key="frame" x="10" y="611.5" width="394" height="31.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="13"/>
+                                <color key="textColor" red="0.71764705880000002" green="0.72156862749999995" blue="0.74117647060000003" alpha="0.8980392157" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="em7-V8-PmR">
+                                <rect key="frame" x="140.5" y="693" width="133" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="133" id="Hsd-mr-Knt"/>
+                                    <constraint firstAttribute="height" constant="48" id="k5J-Qt-j4V"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
+                                <state key="normal" title="Start Chat"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="OIl-v6-zXO"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Rpg-sJ-bk0" firstAttribute="centerX" secondItem="tDM-cS-JTO" secondAttribute="centerX" id="BGU-4C-26N"/>
+                            <constraint firstItem="em7-V8-PmR" firstAttribute="centerX" secondItem="tDM-cS-JTO" secondAttribute="centerX" id="BLc-jg-ge9"/>
+                            <constraint firstItem="bOn-RU-qOZ" firstAttribute="centerX" secondItem="tDM-cS-JTO" secondAttribute="centerX" id="EH9-Ia-2Id"/>
+                            <constraint firstItem="VPO-mC-OjY" firstAttribute="centerX" secondItem="tDM-cS-JTO" secondAttribute="centerX" id="H7S-BS-aOe"/>
+                            <constraint firstItem="Dva-cI-di1" firstAttribute="centerX" secondItem="tDM-cS-JTO" secondAttribute="centerX" id="Hs3-Rk-3MW"/>
+                            <constraint firstItem="VPO-mC-OjY" firstAttribute="leading" secondItem="tDM-cS-JTO" secondAttribute="leading" constant="10" id="JWT-se-TO3"/>
+                            <constraint firstItem="bOn-RU-qOZ" firstAttribute="top" secondItem="Cv6-5k-eP4" secondAttribute="bottom" constant="40" id="KDl-Lb-dDl"/>
+                            <constraint firstItem="Cv6-5k-eP4" firstAttribute="centerX" secondItem="tDM-cS-JTO" secondAttribute="centerX" id="UyU-5V-bEK"/>
+                            <constraint firstItem="Cv6-5k-eP4" firstAttribute="top" secondItem="OIl-v6-zXO" secondAttribute="top" constant="255" id="Zx7-XA-MCT"/>
+                            <constraint firstItem="VPO-mC-OjY" firstAttribute="top" secondItem="Dva-cI-di1" secondAttribute="bottom" constant="20" id="caF-aP-dZt"/>
+                            <constraint firstItem="em7-V8-PmR" firstAttribute="top" secondItem="VPO-mC-OjY" secondAttribute="bottom" constant="50" id="fZu-ij-lxO"/>
+                            <constraint firstAttribute="trailing" secondItem="VPO-mC-OjY" secondAttribute="trailing" constant="10" id="krR-mJ-XMd"/>
+                            <constraint firstItem="Dva-cI-di1" firstAttribute="top" secondItem="bOn-RU-qOZ" secondAttribute="bottom" constant="5" id="rp8-AZ-EKU"/>
+                            <constraint firstItem="Cv6-5k-eP4" firstAttribute="top" secondItem="Rpg-sJ-bk0" secondAttribute="bottom" constant="40" id="sCM-pf-l3F"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="zrV-oP-2rW"/>
+                    <connections>
+                        <outlet property="annieIcon" destination="Cv6-5k-eP4" id="85z-Ju-2ud"/>
+                        <outlet property="startChatButton" destination="em7-V8-PmR" id="Qxo-GC-6Wr"/>
+                        <outlet property="welcomeAnnie2Label" destination="bOn-RU-qOZ" id="30U-RE-U8k"/>
+                        <outlet property="welcomeAnnie3Label" destination="Dva-cI-di1" id="Zha-gz-L7f"/>
+                        <outlet property="welcomeAnnieDisclaimerLabel" destination="VPO-mC-OjY" id="9Yk-lm-Njj"/>
+                        <outlet property="welcomeAnnieLabel" destination="Rpg-sJ-bk0" id="aJD-8t-SV4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YyL-rh-vvJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1761" y="747"/>
+            <point key="canvasLocation" x="1760.8695652173915" y="746.65178571428567"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="pLa-vQ-gt0">
@@ -407,7 +466,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Annie" width="784" height="788"/>
+        <image name="Annie2" width="196" height="197"/>
         <image name="loginBackground" width="375" height="812"/>
         <image name="signupBackground" width="375" height="812"/>
         <image name="siriLogin" width="145" height="141"/>

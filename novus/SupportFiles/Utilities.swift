@@ -57,6 +57,7 @@ class Utilities {
         button.backgroundColor = UIColor.init(red: 43/255, green: 69/255, blue: 206/255, alpha: 1)
         button.layer.cornerRadius = 12.0
         button.tintColor = UIColor.white
+        button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 18)
     }
     
     static func styleHollowButton(_ button:UIButton) {
@@ -66,6 +67,8 @@ class Utilities {
         button.layer.borderColor = UIColor.init(red: 43/255, green: 69/255, blue: 206/255, alpha: 1).cgColor
         button.layer.cornerRadius = 12.0
         button.tintColor = UIColor.black
+        button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 18)
+
     }
     
     static func styleUnderlineButton(_ button:UIButton, text: String) {
