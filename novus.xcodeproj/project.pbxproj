@@ -1,0 +1,788 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		84C5D04926D78EF500B59F36 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C5D04826D78EF500B59F36 /* AppDelegate.swift */; };
+		84C5D04B26D78EF500B59F36 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C5D04A26D78EF500B59F36 /* SceneDelegate.swift */; };
+		84C5D04D26D78EF500B59F36 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C5D04C26D78EF500B59F36 /* ViewController.swift */; };
+		84C5D05026D78EF500B59F36 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84C5D04E26D78EF500B59F36 /* Main.storyboard */; };
+		84C5D05226D78EF900B59F36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84C5D05126D78EF900B59F36 /* Assets.xcassets */; };
+		84C5D05526D78EF900B59F36 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84C5D05326D78EF900B59F36 /* LaunchScreen.storyboard */; };
+		84C5D06026D78EF900B59F36 /* novusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C5D05F26D78EF900B59F36 /* novusTests.swift */; };
+		84C5D06B26D78EFA00B59F36 /* novusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C5D06A26D78EFA00B59F36 /* novusUITests.swift */; };
+		84C5D09826D7981E00B59F36 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84C5D08826D797B500B59F36 /* Alamofire.framework */; };
+		84C5D09926D7981E00B59F36 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84C5D08826D797B500B59F36 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		84C5D05C26D78EF900B59F36 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84C5D03D26D78EF500B59F36 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84C5D04426D78EF500B59F36;
+			remoteInfo = novus;
+		};
+		84C5D06726D78EF900B59F36 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84C5D03D26D78EF500B59F36 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84C5D04426D78EF500B59F36;
+			remoteInfo = novus;
+		};
+		84C5D08726D797B500B59F36 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84C5D07C26D797B400B59F36 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3319A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS";
+		};
+		84C5D08926D797B500B59F36 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84C5D07C26D797B400B59F36 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3E19A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS Tests";
+		};
+		84C5D08B26D797B500B59F36 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84C5D07C26D797B400B59F36 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4DD67C0B1A5C55C900ED2280;
+			remoteInfo = "Alamofire macOS";
+		};
+		84C5D08D26D797B500B59F36 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84C5D07C26D797B400B59F36 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F829C6B21A7A94F100A2CD59;
+			remoteInfo = "Alamofire macOS Tests";
+		};
+		84C5D08F26D797B500B59F36 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84C5D07C26D797B400B59F36 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CF626EF1BA7CB3E0011A099;
+			remoteInfo = "Alamofire tvOS";
+		};
+		84C5D09126D797B500B59F36 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84C5D07C26D797B400B59F36 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CF626F81BA7CB3E0011A099;
+			remoteInfo = "Alamofire tvOS Tests";
+		};
+		84C5D09326D797B500B59F36 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84C5D07C26D797B400B59F36 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E4202FE01B667AA100C997FB;
+			remoteInfo = "Alamofire watchOS";
+		};
+		84C5D09526D797B500B59F36 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84C5D07C26D797B400B59F36 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 31293065263E17D600473CEA;
+			remoteInfo = "Alamofire watchOS Tests";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		84C5D09A26D7981E00B59F36 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				84C5D09926D7981E00B59F36 /* Alamofire.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		84C5D04526D78EF500B59F36 /* novus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = novus.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		84C5D04826D78EF500B59F36 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		84C5D04A26D78EF500B59F36 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		84C5D04C26D78EF500B59F36 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		84C5D04F26D78EF500B59F36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		84C5D05126D78EF900B59F36 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		84C5D05426D78EF900B59F36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		84C5D05626D78EF900B59F36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84C5D05B26D78EF900B59F36 /* novusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = novusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		84C5D05F26D78EF900B59F36 /* novusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = novusTests.swift; sourceTree = "<group>"; };
+		84C5D06126D78EF900B59F36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84C5D06626D78EF900B59F36 /* novusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = novusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		84C5D06A26D78EFA00B59F36 /* novusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = novusUITests.swift; sourceTree = "<group>"; };
+		84C5D06C26D78EFA00B59F36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84C5D07C26D797B400B59F36 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84C5D04226D78EF500B59F36 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84C5D09826D7981E00B59F36 /* Alamofire.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84C5D05826D78EF900B59F36 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84C5D06326D78EF900B59F36 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		84C5D03C26D78EF500B59F36 = {
+			isa = PBXGroup;
+			children = (
+				84C5D04726D78EF500B59F36 /* novus */,
+				84C5D05E26D78EF900B59F36 /* novusTests */,
+				84C5D06926D78EF900B59F36 /* novusUITests */,
+				84C5D04626D78EF500B59F36 /* Products */,
+				84C5D09726D7981E00B59F36 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		84C5D04626D78EF500B59F36 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84C5D04526D78EF500B59F36 /* novus.app */,
+				84C5D05B26D78EF900B59F36 /* novusTests.xctest */,
+				84C5D06626D78EF900B59F36 /* novusUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84C5D04726D78EF500B59F36 /* novus */ = {
+			isa = PBXGroup;
+			children = (
+				84C5D07C26D797B400B59F36 /* Alamofire.xcodeproj */,
+				84C5D07B26D7978800B59F36 /* Controllers */,
+				84C5D07A26D7978100B59F36 /* Views */,
+				84C5D07926D7977700B59F36 /* Models */,
+				84C5D07826D7976900B59F36 /* SupportFiles */,
+				84C5D05626D78EF900B59F36 /* Info.plist */,
+			);
+			path = novus;
+			sourceTree = "<group>";
+		};
+		84C5D05E26D78EF900B59F36 /* novusTests */ = {
+			isa = PBXGroup;
+			children = (
+				84C5D05F26D78EF900B59F36 /* novusTests.swift */,
+				84C5D06126D78EF900B59F36 /* Info.plist */,
+			);
+			path = novusTests;
+			sourceTree = "<group>";
+		};
+		84C5D06926D78EF900B59F36 /* novusUITests */ = {
+			isa = PBXGroup;
+			children = (
+				84C5D06A26D78EFA00B59F36 /* novusUITests.swift */,
+				84C5D06C26D78EFA00B59F36 /* Info.plist */,
+			);
+			path = novusUITests;
+			sourceTree = "<group>";
+		};
+		84C5D07826D7976900B59F36 /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				84C5D04826D78EF500B59F36 /* AppDelegate.swift */,
+				84C5D04A26D78EF500B59F36 /* SceneDelegate.swift */,
+			);
+			path = SupportFiles;
+			sourceTree = "<group>";
+		};
+		84C5D07926D7977700B59F36 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		84C5D07A26D7978100B59F36 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				84C5D04E26D78EF500B59F36 /* Main.storyboard */,
+				84C5D05126D78EF900B59F36 /* Assets.xcassets */,
+				84C5D05326D78EF900B59F36 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		84C5D07B26D7978800B59F36 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				84C5D04C26D78EF500B59F36 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		84C5D07D26D797B400B59F36 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84C5D08826D797B500B59F36 /* Alamofire.framework */,
+				84C5D08A26D797B500B59F36 /* Alamofire iOS Tests.xctest */,
+				84C5D08C26D797B500B59F36 /* Alamofire.framework */,
+				84C5D08E26D797B500B59F36 /* Alamofire macOS Tests.xctest */,
+				84C5D09026D797B500B59F36 /* Alamofire.framework */,
+				84C5D09226D797B500B59F36 /* Alamofire tvOS Tests.xctest */,
+				84C5D09426D797B500B59F36 /* Alamofire.framework */,
+				84C5D09626D797B500B59F36 /* Alamofire watchOS Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84C5D09726D7981E00B59F36 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		84C5D04426D78EF500B59F36 /* novus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84C5D06F26D78EFA00B59F36 /* Build configuration list for PBXNativeTarget "novus" */;
+			buildPhases = (
+				84C5D04126D78EF500B59F36 /* Sources */,
+				84C5D04226D78EF500B59F36 /* Frameworks */,
+				84C5D04326D78EF500B59F36 /* Resources */,
+				84C5D09A26D7981E00B59F36 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = novus;
+			productName = novus;
+			productReference = 84C5D04526D78EF500B59F36 /* novus.app */;
+			productType = "com.apple.product-type.application";
+		};
+		84C5D05A26D78EF900B59F36 /* novusTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84C5D07226D78EFA00B59F36 /* Build configuration list for PBXNativeTarget "novusTests" */;
+			buildPhases = (
+				84C5D05726D78EF900B59F36 /* Sources */,
+				84C5D05826D78EF900B59F36 /* Frameworks */,
+				84C5D05926D78EF900B59F36 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84C5D05D26D78EF900B59F36 /* PBXTargetDependency */,
+			);
+			name = novusTests;
+			productName = novusTests;
+			productReference = 84C5D05B26D78EF900B59F36 /* novusTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		84C5D06526D78EF900B59F36 /* novusUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84C5D07526D78EFA00B59F36 /* Build configuration list for PBXNativeTarget "novusUITests" */;
+			buildPhases = (
+				84C5D06226D78EF900B59F36 /* Sources */,
+				84C5D06326D78EF900B59F36 /* Frameworks */,
+				84C5D06426D78EF900B59F36 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84C5D06826D78EF900B59F36 /* PBXTargetDependency */,
+			);
+			name = novusUITests;
+			productName = novusUITests;
+			productReference = 84C5D06626D78EF900B59F36 /* novusUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84C5D03D26D78EF500B59F36 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					84C5D04426D78EF500B59F36 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					84C5D05A26D78EF900B59F36 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 84C5D04426D78EF500B59F36;
+					};
+					84C5D06526D78EF900B59F36 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 84C5D04426D78EF500B59F36;
+					};
+				};
+			};
+			buildConfigurationList = 84C5D04026D78EF500B59F36 /* Build configuration list for PBXProject "novus" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 84C5D03C26D78EF500B59F36;
+			productRefGroup = 84C5D04626D78EF500B59F36 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 84C5D07D26D797B400B59F36 /* Products */;
+					ProjectRef = 84C5D07C26D797B400B59F36 /* Alamofire.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				84C5D04426D78EF500B59F36 /* novus */,
+				84C5D05A26D78EF900B59F36 /* novusTests */,
+				84C5D06526D78EF900B59F36 /* novusUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		84C5D08826D797B500B59F36 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 84C5D08726D797B500B59F36 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		84C5D08A26D797B500B59F36 /* Alamofire iOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire iOS Tests.xctest";
+			remoteRef = 84C5D08926D797B500B59F36 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		84C5D08C26D797B500B59F36 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 84C5D08B26D797B500B59F36 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		84C5D08E26D797B500B59F36 /* Alamofire macOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire macOS Tests.xctest";
+			remoteRef = 84C5D08D26D797B500B59F36 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		84C5D09026D797B500B59F36 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 84C5D08F26D797B500B59F36 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		84C5D09226D797B500B59F36 /* Alamofire tvOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire tvOS Tests.xctest";
+			remoteRef = 84C5D09126D797B500B59F36 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		84C5D09426D797B500B59F36 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 84C5D09326D797B500B59F36 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		84C5D09626D797B500B59F36 /* Alamofire watchOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire watchOS Tests.xctest";
+			remoteRef = 84C5D09526D797B500B59F36 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		84C5D04326D78EF500B59F36 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84C5D05526D78EF900B59F36 /* LaunchScreen.storyboard in Resources */,
+				84C5D05226D78EF900B59F36 /* Assets.xcassets in Resources */,
+				84C5D05026D78EF500B59F36 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84C5D05926D78EF900B59F36 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84C5D06426D78EF900B59F36 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84C5D04126D78EF500B59F36 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84C5D04D26D78EF500B59F36 /* ViewController.swift in Sources */,
+				84C5D04926D78EF500B59F36 /* AppDelegate.swift in Sources */,
+				84C5D04B26D78EF500B59F36 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84C5D05726D78EF900B59F36 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84C5D06026D78EF900B59F36 /* novusTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84C5D06226D78EF900B59F36 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84C5D06B26D78EFA00B59F36 /* novusUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		84C5D05D26D78EF900B59F36 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84C5D04426D78EF500B59F36 /* novus */;
+			targetProxy = 84C5D05C26D78EF900B59F36 /* PBXContainerItemProxy */;
+		};
+		84C5D06826D78EF900B59F36 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84C5D04426D78EF500B59F36 /* novus */;
+			targetProxy = 84C5D06726D78EF900B59F36 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		84C5D04E26D78EF500B59F36 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84C5D04F26D78EF500B59F36 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		84C5D05326D78EF900B59F36 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84C5D05426D78EF900B59F36 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		84C5D06D26D78EFA00B59F36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		84C5D06E26D78EFA00B59F36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		84C5D07026D78EFA00B59F36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = novus/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "net.pasakay-puv.novus";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		84C5D07126D78EFA00B59F36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = novus/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "net.pasakay-puv.novus";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		84C5D07326D78EFA00B59F36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = novusTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "net.pasakay-puv.novusTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/novus.app/novus";
+			};
+			name = Debug;
+		};
+		84C5D07426D78EFA00B59F36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = novusTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "net.pasakay-puv.novusTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/novus.app/novus";
+			};
+			name = Release;
+		};
+		84C5D07626D78EFA00B59F36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = novusUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "net.pasakay-puv.novusUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = novus;
+			};
+			name = Debug;
+		};
+		84C5D07726D78EFA00B59F36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = novusUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "net.pasakay-puv.novusUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = novus;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84C5D04026D78EF500B59F36 /* Build configuration list for PBXProject "novus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84C5D06D26D78EFA00B59F36 /* Debug */,
+				84C5D06E26D78EFA00B59F36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84C5D06F26D78EFA00B59F36 /* Build configuration list for PBXNativeTarget "novus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84C5D07026D78EFA00B59F36 /* Debug */,
+				84C5D07126D78EFA00B59F36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84C5D07226D78EFA00B59F36 /* Build configuration list for PBXNativeTarget "novusTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84C5D07326D78EFA00B59F36 /* Debug */,
+				84C5D07426D78EFA00B59F36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84C5D07526D78EFA00B59F36 /* Build configuration list for PBXNativeTarget "novusUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84C5D07626D78EFA00B59F36 /* Debug */,
+				84C5D07726D78EFA00B59F36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 84C5D03D26D78EF500B59F36 /* Project object */;
+}
