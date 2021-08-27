@@ -49,7 +49,12 @@ class LoginViewController: UIViewController {
         Utilities.styleTextField(emailTextField)
         Utilities.styleTextField(passwordTextField)
         Utilities.styleFilledButton(loginButton)
-        Utilities.styleLabelFieldHeading(welcomeLabel)
+        Utilities.styleLoginMethodButton(googleLoginButton, icon: "iconGoogle2.png")
+        Utilities.styleLoginMethodButton(appleLoginButton, icon: "iconApple2.png")
+        Utilities.styleUnderlineButton(signUpButton, text: "Create An Account")
+
+        
+        
         
     }
 

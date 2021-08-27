@@ -15,6 +15,7 @@ class RegisterViewController: UIViewController {
     @IBOutlet weak var signup2Label: UILabel!
     
     
+    @IBOutlet weak var signUpTextView: UIView!
     
     
     @IBOutlet weak var firstNameTextField: UITextField!
@@ -55,8 +56,10 @@ class RegisterViewController: UIViewController {
         Utilities.styleTextField(lastNameTextField)
         Utilities.styleTextField(emailTextField)
         Utilities.styleTextField(passwordTextField)
-        
         Utilities.styleFilledButton(signUpButton)
+        Utilities.styleHeadingLabel(signup1Label, content: "Create a New Account")
+        Utilities.styleUnderlineButton(loginButton, text: "Already Have an Account? Login")
+
     }
 
     /*

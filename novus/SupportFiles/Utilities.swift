@@ -36,11 +36,19 @@ class Utilities {
             textField.leftViewMode = UITextField.ViewMode.always
     }
     
-    static func styleLabelFieldHeading(_ label:UILabel) {
-        
-        // Hollow rounded corner style
-        label.text = "Welcome to Health Space";
+    static func styleLoginMethodButton(_ button:UIButton, icon: String) {
+        let buttonImage = UIImage(named: icon)
+        button.setImage(buttonImage , for: .normal)
+        button.backgroundColor = UIColor(white: 1, alpha: 0.2)
+        button.layer.cornerRadius = 12
+
     }
+    
+    static func styleHeadingLabel(_ label:UILabel, content: String) {
+        label.text = content
+        label.textColor = UIColor.init(red: 16/255, green: 23/255, blue: 49/255, alpha: 1)
+    }
+    
     
     
     static func styleFilledButton(_ button:UIButton) {
@@ -58,6 +66,18 @@ class Utilities {
         button.layer.borderColor = UIColor.init(red: 43/255, green: 69/255, blue: 206/255, alpha: 1).cgColor
         button.layer.cornerRadius = 12.0
         button.tintColor = UIColor.black
+    }
+    
+    static func styleUnderlineButton(_ button:UIButton, text: String) {
+        
+        // Hollow rounded corner style
+        let attributedString = NSAttributedString(string: NSLocalizedString(text, comment: ""), attributes:[
+            NSAttributedString.Key.font : UIFont.systemFont(ofSize: 16.0),
+            NSAttributedString.Key.foregroundColor : UIColor.black,
+            NSAttributedString.Key.underlineStyle:1.0
+        ])
+        button.setAttributedTitle(attributedString, for: .normal)
+        
     }
     
     static func isPasswordValid(_ password : String) -> Bool {
