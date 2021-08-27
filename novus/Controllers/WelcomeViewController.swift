@@ -1,5 +1,5 @@
 //
-//  LoginViewController.swift
+//  WelcomeViewController.swift
 //  novus
 //
 //  Created by Raed Ibrahim on 8/27/21.
@@ -7,11 +7,12 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
+class WelcomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        title = "Log In"
+        view.backgroundColor = .white
         // Do any additional setup after loading the view.
     }
     

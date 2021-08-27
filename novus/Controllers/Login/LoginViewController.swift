@@ -1,5 +1,5 @@
 //
-//  RegisterViewController.swift
+//  LoginViewController.swift
 //  novus
 //
 //  Created by Raed Ibrahim on 8/27/21.
@@ -7,12 +7,24 @@
 
 import UIKit
 
-class RegisterViewController: UIViewController {
+class LoginViewController: UIViewController {
 
+    
+    @IBOutlet weak var emailTextField: UITextField!
+    
+    @IBOutlet weak var passwordTextField: UITextField!
+    
+    @IBOutlet weak var loginButton: UIButton!
+    
+    @IBOutlet weak var errorLabel: UILabel!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
+        title = "Log In"
+        view.backgroundColor = .white
     }
     
 
@@ -25,5 +37,7 @@ class RegisterViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    @IBAction func loginTapped(_ sender: Any) {
+    }
+    
 }
