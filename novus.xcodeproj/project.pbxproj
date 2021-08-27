@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		15AD60A2A9110B6013AFFBDB /* Pods_novusTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC45DE8D017C0A7371AB2B80 /* Pods_novusTests.framework */; };
 		17F3D653FAF4DECDD5FC1203 /* Pods_novus_novusUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EFBEB9E00120685CC298932 /* Pods_novus_novusUITests.framework */; };
+		7018BD5B26D99D380053EFE6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7018BD5A26D99D380053EFE6 /* Constants.swift */; };
 		70C413A326D8BBB5004D17A9 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C413A226D8BBB5004D17A9 /* RegisterViewController.swift */; };
 		70C413A726D8BBCF004D17A9 /* PhotoViewerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C413A626D8BBCF004D17A9 /* PhotoViewerViewController.swift */; };
 		70C413AB26D8BBED004D17A9 /* VideoPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C413AA26D8BBED004D17A9 /* VideoPlayerViewController.swift */; };
@@ -18,6 +19,7 @@
 		70C413E726D8CA07004D17A9 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C413E626D8CA06004D17A9 /* WelcomeViewController.swift */; };
 		70C413EC26D8DB36004D17A9 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C413EB26D8DB36004D17A9 /* HomeViewController.swift */; };
 		70C413F226D8E7A1004D17A9 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C413F126D8E7A1004D17A9 /* Utilities.swift */; };
+		70C413FD26D98C11004D17A9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 70C413FC26D98C11004D17A9 /* GoogleService-Info.plist */; };
 		84C5D04926D78EF500B59F36 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C5D04826D78EF500B59F36 /* AppDelegate.swift */; };
 		84C5D04B26D78EF500B59F36 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C5D04A26D78EF500B59F36 /* SceneDelegate.swift */; };
 		84C5D04D26D78EF500B59F36 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C5D04C26D78EF500B59F36 /* ViewController.swift */; };
@@ -107,6 +109,7 @@
 		03C887059FDF55FA29EF7CFC /* Pods-novus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-novus.release.xcconfig"; path = "Target Support Files/Pods-novus/Pods-novus.release.xcconfig"; sourceTree = "<group>"; };
 		2732445D19F7B409A5BA41D2 /* Pods-novusTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-novusTests.release.xcconfig"; path = "Target Support Files/Pods-novusTests/Pods-novusTests.release.xcconfig"; sourceTree = "<group>"; };
 		2A572AE673473EB86E36C3D0 /* Pods-novus-novusUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-novus-novusUITests.release.xcconfig"; path = "Target Support Files/Pods-novus-novusUITests/Pods-novus-novusUITests.release.xcconfig"; sourceTree = "<group>"; };
+		7018BD5A26D99D380053EFE6 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		70C413A226D8BBB5004D17A9 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		70C413A626D8BBCF004D17A9 /* PhotoViewerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewerViewController.swift; sourceTree = "<group>"; };
 		70C413AA26D8BBED004D17A9 /* VideoPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerViewController.swift; sourceTree = "<group>"; };
@@ -116,6 +119,7 @@
 		70C413E626D8CA06004D17A9 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		70C413EB26D8DB36004D17A9 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		70C413F126D8E7A1004D17A9 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		70C413FC26D98C11004D17A9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		7EFBEB9E00120685CC298932 /* Pods_novus_novusUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_novus_novusUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		83303AEDC6130616C177DB42 /* Pods-novus-novusUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-novus-novusUITests.debug.xcconfig"; path = "Target Support Files/Pods-novus-novusUITests/Pods-novus-novusUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		84C5D04526D78EF500B59F36 /* novus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = novus.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -225,6 +229,7 @@
 				84C5D07926D7977700B59F36 /* Models */,
 				84C5D07826D7976900B59F36 /* SupportFiles */,
 				84C5D05626D78EF900B59F36 /* Info.plist */,
+				70C413FC26D98C11004D17A9 /* GoogleService-Info.plist */,
 			);
 			path = novus;
 			sourceTree = "<group>";
@@ -253,6 +258,7 @@
 				84C5D04826D78EF500B59F36 /* AppDelegate.swift */,
 				84C5D04A26D78EF500B59F36 /* SceneDelegate.swift */,
 				70C413F126D8E7A1004D17A9 /* Utilities.swift */,
+				7018BD5A26D99D380053EFE6 /* Constants.swift */,
 			);
 			path = SupportFiles;
 			sourceTree = "<group>";
@@ -500,6 +506,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				84C5D05526D78EF900B59F36 /* LaunchScreen.storyboard in Resources */,
+				70C413FD26D98C11004D17A9 /* GoogleService-Info.plist in Resources */,
 				84C5D05226D78EF900B59F36 /* Assets.xcassets in Resources */,
 				84C5D05026D78EF500B59F36 /* Main.storyboard in Resources */,
 			);
@@ -636,6 +643,7 @@
 				70C413AB26D8BBED004D17A9 /* VideoPlayerViewController.swift in Sources */,
 				84C5D04926D78EF500B59F36 /* AppDelegate.swift in Sources */,
 				70C413F226D8E7A1004D17A9 /* Utilities.swift in Sources */,
+				7018BD5B26D99D380053EFE6 /* Constants.swift in Sources */,
 				84C5D04B26D78EF500B59F36 /* SceneDelegate.swift in Sources */,
 				70C413EC26D8DB36004D17A9 /* HomeViewController.swift in Sources */,
 				70C413B326D8BC35004D17A9 /* NewConversationViewController.swift in Sources */,
@@ -818,6 +826,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H59DA6QF92;
 				INFOPLIST_FILE = novus/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -838,6 +847,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H59DA6QF92;
 				INFOPLIST_FILE = novus/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
 				LD_RUNPATH_SEARCH_PATHS = (

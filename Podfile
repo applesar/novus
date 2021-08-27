@@ -6,6 +6,11 @@ target 'novus' do
   use_frameworks!
 
 	pod 'Alamofire', '~> 5.4'
+	pod 'GoogleSignIn'
+	pod 'Firebase/Analytics'
+	pod 'Firebase/Auth'
+	pod 'Firebase/Core'
+	pod 'Firebase/Firestore'
 
   # Pods for novus
 
