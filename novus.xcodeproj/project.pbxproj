@@ -3,10 +3,25 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		15AD60A2A9110B6013AFFBDB /* Pods_novusTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC45DE8D017C0A7371AB2B80 /* Pods_novusTests.framework */; };
+		17F3D653FAF4DECDD5FC1203 /* Pods_novus_novusUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EFBEB9E00120685CC298932 /* Pods_novus_novusUITests.framework */; };
+		700CDF6E26D9EAD000BB0298 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700CDF6D26D9EAD000BB0298 /* File.swift */; };
+		7018BD5B26D99D380053EFE6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7018BD5A26D99D380053EFE6 /* Constants.swift */; };
+		70C413A326D8BBB5004D17A9 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C413A226D8BBB5004D17A9 /* RegisterViewController.swift */; };
+		70C413A726D8BBCF004D17A9 /* PhotoViewerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C413A626D8BBCF004D17A9 /* PhotoViewerViewController.swift */; };
+		70C413AB26D8BBED004D17A9 /* VideoPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C413AA26D8BBED004D17A9 /* VideoPlayerViewController.swift */; };
+		70C413AF26D8BC22004D17A9 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C413AE26D8BC22004D17A9 /* ProfileViewController.swift */; };
+		70C413B326D8BC35004D17A9 /* NewConversationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C413B226D8BC35004D17A9 /* NewConversationViewController.swift */; };
+		70C413E226D8C583004D17A9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C413E126D8C583004D17A9 /* LoginViewController.swift */; };
+		70C413E726D8CA07004D17A9 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C413E626D8CA06004D17A9 /* WelcomeViewController.swift */; };
+		70C413EC26D8DB36004D17A9 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C413EB26D8DB36004D17A9 /* HomeViewController.swift */; };
+		70C413F226D8E7A1004D17A9 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C413F126D8E7A1004D17A9 /* Utilities.swift */; };
+		70C413FD26D98C11004D17A9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 70C413FC26D98C11004D17A9 /* GoogleService-Info.plist */; };
+		70CA8D8826D9DBCB00E1A18E /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CA8D8726D9DBCB00E1A18E /* ChatViewController.swift */; };
 		84C5D04926D78EF500B59F36 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C5D04826D78EF500B59F36 /* AppDelegate.swift */; };
 		84C5D04B26D78EF500B59F36 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C5D04A26D78EF500B59F36 /* SceneDelegate.swift */; };
 		84C5D04D26D78EF500B59F36 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C5D04C26D78EF500B59F36 /* ViewController.swift */; };
@@ -16,7 +31,7 @@
 		84C5D06026D78EF900B59F36 /* novusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C5D05F26D78EF900B59F36 /* novusTests.swift */; };
 		84C5D06B26D78EFA00B59F36 /* novusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C5D06A26D78EFA00B59F36 /* novusUITests.swift */; };
 		84C5D09826D7981E00B59F36 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84C5D08826D797B500B59F36 /* Alamofire.framework */; };
-		84C5D09926D7981E00B59F36 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84C5D08826D797B500B59F36 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DC90744D313DBEF202A4D97B /* Pods_novus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5865193BD756B0A12F04353 /* Pods_novus.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,21 +107,25 @@
 		};
 /* End PBXContainerItemProxy section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		84C5D09A26D7981E00B59F36 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				84C5D09926D7981E00B59F36 /* Alamofire.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
+		03C887059FDF55FA29EF7CFC /* Pods-novus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-novus.release.xcconfig"; path = "Target Support Files/Pods-novus/Pods-novus.release.xcconfig"; sourceTree = "<group>"; };
+		2732445D19F7B409A5BA41D2 /* Pods-novusTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-novusTests.release.xcconfig"; path = "Target Support Files/Pods-novusTests/Pods-novusTests.release.xcconfig"; sourceTree = "<group>"; };
+		2A572AE673473EB86E36C3D0 /* Pods-novus-novusUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-novus-novusUITests.release.xcconfig"; path = "Target Support Files/Pods-novus-novusUITests/Pods-novus-novusUITests.release.xcconfig"; sourceTree = "<group>"; };
+		700CDF6D26D9EAD000BB0298 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		7018BD5A26D99D380053EFE6 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		70C413A226D8BBB5004D17A9 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		70C413A626D8BBCF004D17A9 /* PhotoViewerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewerViewController.swift; sourceTree = "<group>"; };
+		70C413AA26D8BBED004D17A9 /* VideoPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerViewController.swift; sourceTree = "<group>"; };
+		70C413AE26D8BC22004D17A9 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		70C413B226D8BC35004D17A9 /* NewConversationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewConversationViewController.swift; sourceTree = "<group>"; };
+		70C413E126D8C583004D17A9 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		70C413E626D8CA06004D17A9 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		70C413EB26D8DB36004D17A9 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		70C413F126D8E7A1004D17A9 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		70C413FC26D98C11004D17A9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		70CA8D8726D9DBCB00E1A18E /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		7EFBEB9E00120685CC298932 /* Pods_novus_novusUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_novus_novusUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		83303AEDC6130616C177DB42 /* Pods-novus-novusUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-novus-novusUITests.debug.xcconfig"; path = "Target Support Files/Pods-novus-novusUITests/Pods-novus-novusUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		84C5D04526D78EF500B59F36 /* novus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = novus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84C5D04826D78EF500B59F36 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84C5D04A26D78EF500B59F36 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -122,6 +141,10 @@
 		84C5D06A26D78EFA00B59F36 /* novusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = novusUITests.swift; sourceTree = "<group>"; };
 		84C5D06C26D78EFA00B59F36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84C5D07C26D797B400B59F36 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = SOURCE_ROOT; };
+		9C8627CBFD4FF770334BFA50 /* Pods-novusTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-novusTests.debug.xcconfig"; path = "Target Support Files/Pods-novusTests/Pods-novusTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CC45DE8D017C0A7371AB2B80 /* Pods_novusTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_novusTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5865193BD756B0A12F04353 /* Pods_novus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_novus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA874D42B694E034A37B7DCC /* Pods-novus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-novus.debug.xcconfig"; path = "Target Support Files/Pods-novus/Pods-novus.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +153,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				84C5D09826D7981E00B59F36 /* Alamofire.framework in Frameworks */,
+				DC90744D313DBEF202A4D97B /* Pods_novus.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,6 +161,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15AD60A2A9110B6013AFFBDB /* Pods_novusTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,12 +169,46 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17F3D653FAF4DECDD5FC1203 /* Pods_novus_novusUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		700CDF6C26D9EAB500BB0298 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				700CDF6D26D9EAD000BB0298 /* File.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		70C4139726D8B938004D17A9 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		70C4139926D8B970004D17A9 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				84C5D04E26D78EF500B59F36 /* Main.storyboard */,
+				84C5D05326D78EF900B59F36 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		70C413CF26D8C1EB004D17A9 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				70C413A226D8BBB5004D17A9 /* RegisterViewController.swift */,
+				70C413E126D8C583004D17A9 /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
 		84C5D03C26D78EF500B59F36 = {
 			isa = PBXGroup;
 			children = (
@@ -158,6 +217,7 @@
 				84C5D06926D78EF900B59F36 /* novusUITests */,
 				84C5D04626D78EF500B59F36 /* Products */,
 				84C5D09726D7981E00B59F36 /* Frameworks */,
+				F3362CEFDADDC9A9A087129D /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -174,12 +234,15 @@
 		84C5D04726D78EF500B59F36 /* novus */ = {
 			isa = PBXGroup;
 			children = (
+				700CDF6C26D9EAB500BB0298 /* Models */,
+				70C4139726D8B938004D17A9 /* ViewModels */,
 				84C5D07C26D797B400B59F36 /* Alamofire.xcodeproj */,
 				84C5D07B26D7978800B59F36 /* Controllers */,
 				84C5D07A26D7978100B59F36 /* Views */,
 				84C5D07926D7977700B59F36 /* Models */,
 				84C5D07826D7976900B59F36 /* SupportFiles */,
 				84C5D05626D78EF900B59F36 /* Info.plist */,
+				70C413FC26D98C11004D17A9 /* GoogleService-Info.plist */,
 			);
 			path = novus;
 			sourceTree = "<group>";
@@ -207,6 +270,8 @@
 			children = (
 				84C5D04826D78EF500B59F36 /* AppDelegate.swift */,
 				84C5D04A26D78EF500B59F36 /* SceneDelegate.swift */,
+				70C413F126D8E7A1004D17A9 /* Utilities.swift */,
+				7018BD5A26D99D380053EFE6 /* Constants.swift */,
 			);
 			path = SupportFiles;
 			sourceTree = "<group>";
@@ -221,9 +286,8 @@
 		84C5D07A26D7978100B59F36 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				84C5D04E26D78EF500B59F36 /* Main.storyboard */,
+				70C4139926D8B970004D17A9 /* Storyboards */,
 				84C5D05126D78EF900B59F36 /* Assets.xcassets */,
-				84C5D05326D78EF900B59F36 /* LaunchScreen.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -231,7 +295,15 @@
 		84C5D07B26D7978800B59F36 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				70C413CF26D8C1EB004D17A9 /* Login */,
 				84C5D04C26D78EF500B59F36 /* ViewController.swift */,
+				70C413A626D8BBCF004D17A9 /* PhotoViewerViewController.swift */,
+				70C413AA26D8BBED004D17A9 /* VideoPlayerViewController.swift */,
+				70C413AE26D8BC22004D17A9 /* ProfileViewController.swift */,
+				70C413B226D8BC35004D17A9 /* NewConversationViewController.swift */,
+				70C413E626D8CA06004D17A9 /* WelcomeViewController.swift */,
+				70C413EB26D8DB36004D17A9 /* HomeViewController.swift */,
+				70CA8D8726D9DBCB00E1A18E /* ChatViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -254,8 +326,24 @@
 		84C5D09726D7981E00B59F36 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D5865193BD756B0A12F04353 /* Pods_novus.framework */,
+				7EFBEB9E00120685CC298932 /* Pods_novus_novusUITests.framework */,
+				CC45DE8D017C0A7371AB2B80 /* Pods_novusTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F3362CEFDADDC9A9A087129D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FA874D42B694E034A37B7DCC /* Pods-novus.debug.xcconfig */,
+				03C887059FDF55FA29EF7CFC /* Pods-novus.release.xcconfig */,
+				83303AEDC6130616C177DB42 /* Pods-novus-novusUITests.debug.xcconfig */,
+				2A572AE673473EB86E36C3D0 /* Pods-novus-novusUITests.release.xcconfig */,
+				9C8627CBFD4FF770334BFA50 /* Pods-novusTests.debug.xcconfig */,
+				2732445D19F7B409A5BA41D2 /* Pods-novusTests.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,10 +353,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 84C5D06F26D78EFA00B59F36 /* Build configuration list for PBXNativeTarget "novus" */;
 			buildPhases = (
+				1FBF1F75528630DE52ED5105 /* [CP] Check Pods Manifest.lock */,
 				84C5D04126D78EF500B59F36 /* Sources */,
 				84C5D04226D78EF500B59F36 /* Frameworks */,
 				84C5D04326D78EF500B59F36 /* Resources */,
-				84C5D09A26D7981E00B59F36 /* Embed Frameworks */,
+				13974A91BF255FD0659FA03D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -283,6 +372,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 84C5D07226D78EFA00B59F36 /* Build configuration list for PBXNativeTarget "novusTests" */;
 			buildPhases = (
+				29851CBB778761BD7C9F1BBD /* [CP] Check Pods Manifest.lock */,
 				84C5D05726D78EF900B59F36 /* Sources */,
 				84C5D05826D78EF900B59F36 /* Frameworks */,
 				84C5D05926D78EF900B59F36 /* Resources */,
@@ -301,9 +391,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 84C5D07526D78EFA00B59F36 /* Build configuration list for PBXNativeTarget "novusUITests" */;
 			buildPhases = (
+				9123AE995953F38BD42AEE31 /* [CP] Check Pods Manifest.lock */,
 				84C5D06226D78EF900B59F36 /* Sources */,
 				84C5D06326D78EF900B59F36 /* Frameworks */,
 				84C5D06426D78EF900B59F36 /* Resources */,
+				1DD889D6E8B5EBB3AB25318E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -428,6 +520,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				84C5D05526D78EF900B59F36 /* LaunchScreen.storyboard in Resources */,
+				70C413FD26D98C11004D17A9 /* GoogleService-Info.plist in Resources */,
 				84C5D05226D78EF900B59F36 /* Assets.xcassets in Resources */,
 				84C5D05026D78EF500B59F36 /* Main.storyboard in Resources */,
 			);
@@ -449,14 +542,129 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		13974A91BF255FD0659FA03D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-novus/Pods-novus-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-novus/Pods-novus-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-novus/Pods-novus-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1DD889D6E8B5EBB3AB25318E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-novus-novusUITests/Pods-novus-novusUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-novus-novusUITests/Pods-novus-novusUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-novus-novusUITests/Pods-novus-novusUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1FBF1F75528630DE52ED5105 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-novus-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		29851CBB778761BD7C9F1BBD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-novusTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9123AE995953F38BD42AEE31 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-novus-novusUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		84C5D04126D78EF500B59F36 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70C413E226D8C583004D17A9 /* LoginViewController.swift in Sources */,
+				70C413E726D8CA07004D17A9 /* WelcomeViewController.swift in Sources */,
+				70C413A326D8BBB5004D17A9 /* RegisterViewController.swift in Sources */,
 				84C5D04D26D78EF500B59F36 /* ViewController.swift in Sources */,
+				70C413AB26D8BBED004D17A9 /* VideoPlayerViewController.swift in Sources */,
 				84C5D04926D78EF500B59F36 /* AppDelegate.swift in Sources */,
+				70C413F226D8E7A1004D17A9 /* Utilities.swift in Sources */,
+				7018BD5B26D99D380053EFE6 /* Constants.swift in Sources */,
 				84C5D04B26D78EF500B59F36 /* SceneDelegate.swift in Sources */,
+				70C413EC26D8DB36004D17A9 /* HomeViewController.swift in Sources */,
+				700CDF6E26D9EAD000BB0298 /* File.swift in Sources */,
+				70CA8D8826D9DBCB00E1A18E /* ChatViewController.swift in Sources */,
+				70C413B326D8BC35004D17A9 /* NewConversationViewController.swift in Sources */,
+				70C413AF26D8BC22004D17A9 /* ProfileViewController.swift in Sources */,
+				70C413A726D8BBCF004D17A9 /* PhotoViewerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -562,7 +770,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -617,7 +825,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -629,11 +837,14 @@
 		};
 		84C5D07026D78EFA00B59F36 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA874D42B694E034A37B7DCC /* Pods-novus.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H59DA6QF92;
 				INFOPLIST_FILE = novus/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -647,11 +858,14 @@
 		};
 		84C5D07126D78EFA00B59F36 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03C887059FDF55FA29EF7CFC /* Pods-novus.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H59DA6QF92;
 				INFOPLIST_FILE = novus/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -665,12 +879,13 @@
 		};
 		84C5D07326D78EFA00B59F36 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C8627CBFD4FF770334BFA50 /* Pods-novusTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = novusTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -686,12 +901,13 @@
 		};
 		84C5D07426D78EFA00B59F36 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2732445D19F7B409A5BA41D2 /* Pods-novusTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = novusTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -707,10 +923,12 @@
 		};
 		84C5D07626D78EFA00B59F36 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83303AEDC6130616C177DB42 /* Pods-novus-novusUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = novusUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -726,10 +944,12 @@
 		};
 		84C5D07726D78EFA00B59F36 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A572AE673473EB86E36C3D0 /* Pods-novus-novusUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = novusUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
