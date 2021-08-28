@@ -226,6 +226,10 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wyp-wm-YMF">
                                         <rect key="frame" x="0.0" y="441.5" width="334" height="30"/>
                                         <state key="normal" title="loginButton"/>
+                                        <connections>
+                                            <action selector="haveAnAccountTapped:" destination="BtY-Eg-lgf" eventType="touchUpInside" id="G2M-Cm-AD7"/>
+                                            <segue destination="TTI-xy-BVX" kind="show" id="IOD-TY-AhF"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -395,6 +399,9 @@
                                     <constraint firstAttribute="height" constant="48" id="Bih-4z-dc8"/>
                                 </constraints>
                                 <state key="normal" title="SignUp"/>
+                                <connections>
+                                    <segue destination="BtY-Eg-lgf" kind="show" id="fge-WB-b1S"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="2jR-oX-XFQ"/>
@@ -464,7 +471,26 @@
             </objects>
             <point key="canvasLocation" x="2560.8695652173915" y="71.651785714285708"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="675-mb-BiK">
+            <objects>
+                <viewController id="7a2-mm-gZR" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="D5W-rd-5Ek">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="OlH-X5-yGh"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i58-g3-uwo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2523" y="747"/>
+        </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="xHY-nI-3ra"/>
+        <segue reference="Va6-0f-29Y"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="Annie2" width="196" height="197"/>
         <image name="loginBackground" width="375" height="812"/>

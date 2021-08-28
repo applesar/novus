@@ -93,6 +93,14 @@ class LoginViewController: UIViewController {
         errorLabel.text = message
         errorLabel.alpha = 1
     }
+    func transitionToHome() {
+        
+       let homeViewController = storyboard?.instantiateViewController(identifier: Constants.Storyboard.homeViewController) as? HomeViewController
+        
+        view.window?.rootViewController = homeViewController
+        view.window?.makeKeyAndVisible()
+    }
+    
     
     @IBAction func loginTapped(_ sender: Any) {
         
@@ -108,18 +116,18 @@ class LoginViewController: UIViewController {
             let password = passwordTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
             
             // Signing in the user
-            Auth.auth().signIn(withEmail: email, password: password) { (result, error) in
+            Auth.auth().signIn(withEmail: email, password: password) { [weak self] (result, error) in
+                guard let strongSelf = self else {
+                    return
+                }
                 if error != nil {
                     // Couldn't sign in
-                    self.errorLabel.text = error!.localizedDescription
-                    self.errorLabel.alpha = 1
+                    strongSelf.errorLabel.text = error!.localizedDescription
+                    strongSelf.errorLabel.alpha = 1
                 }
                 else {
                     
-                    let homeViewController = self.storyboard?.instantiateViewController(identifier: Constants.Storyboard.homeViewController) as? HomeViewController
-                    
-                    self.view.window?.rootViewController = homeViewController
-                    self.view.window?.makeKeyAndVisible()
+                    strongSelf.transitionToHome()
                 }
             }
         }

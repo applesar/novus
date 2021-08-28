@@ -60,6 +60,10 @@ class RegisterViewController: UIViewController {
         return nil
     }
     
+    
+    @IBAction func haveAnAccountTapped(_ sender: Any) {
+    }
+    
     @IBAction func signUpTapped(_ sender: Any) {
         
         // Validate the fields
@@ -77,13 +81,15 @@ class RegisterViewController: UIViewController {
             let password = passwordTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
             
             // Create the user
-            Auth.auth().createUser(withEmail: email, password: password) { (result, err) in
-                
+            Auth.auth().createUser(withEmail: email, password: password) { [weak self] (result, err) in
+                guard let strongSelf = self else {
+                    return
+                }
                 // Check for errors
                 if err != nil {
                     
                     // There was an error creating the user
-                    self.showError("Error creating user")
+                    strongSelf.showError("Error creating user")
                 }
                 else {
                     
@@ -94,12 +100,12 @@ class RegisterViewController: UIViewController {
                         
                         if error != nil {
                             // Show error message
-                            self.showError("Error saving user data")
+                            strongSelf.showError("Error saving user data")
                         }
                     }
                     
                     // Transition to the home screen
-                    self.transitionToHome()
+                    strongSelf.transitionToHome()
                 }
                 
             }
