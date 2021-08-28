@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		15AD60A2A9110B6013AFFBDB /* Pods_novusTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC45DE8D017C0A7371AB2B80 /* Pods_novusTests.framework */; };
 		17F3D653FAF4DECDD5FC1203 /* Pods_novus_novusUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EFBEB9E00120685CC298932 /* Pods_novus_novusUITests.framework */; };
+		700CDF6E26D9EAD000BB0298 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700CDF6D26D9EAD000BB0298 /* File.swift */; };
 		7018BD5B26D99D380053EFE6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7018BD5A26D99D380053EFE6 /* Constants.swift */; };
 		70C413A326D8BBB5004D17A9 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C413A226D8BBB5004D17A9 /* RegisterViewController.swift */; };
 		70C413A726D8BBCF004D17A9 /* PhotoViewerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C413A626D8BBCF004D17A9 /* PhotoViewerViewController.swift */; };
@@ -110,6 +111,7 @@
 		03C887059FDF55FA29EF7CFC /* Pods-novus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-novus.release.xcconfig"; path = "Target Support Files/Pods-novus/Pods-novus.release.xcconfig"; sourceTree = "<group>"; };
 		2732445D19F7B409A5BA41D2 /* Pods-novusTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-novusTests.release.xcconfig"; path = "Target Support Files/Pods-novusTests/Pods-novusTests.release.xcconfig"; sourceTree = "<group>"; };
 		2A572AE673473EB86E36C3D0 /* Pods-novus-novusUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-novus-novusUITests.release.xcconfig"; path = "Target Support Files/Pods-novus-novusUITests/Pods-novus-novusUITests.release.xcconfig"; sourceTree = "<group>"; };
+		700CDF6D26D9EAD000BB0298 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		7018BD5A26D99D380053EFE6 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		70C413A226D8BBB5004D17A9 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		70C413A626D8BBCF004D17A9 /* PhotoViewerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewerViewController.swift; sourceTree = "<group>"; };
@@ -174,6 +176,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		700CDF6C26D9EAB500BB0298 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				700CDF6D26D9EAD000BB0298 /* File.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		70C4139726D8B938004D17A9 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
@@ -224,6 +234,7 @@
 		84C5D04726D78EF500B59F36 /* novus */ = {
 			isa = PBXGroup;
 			children = (
+				700CDF6C26D9EAB500BB0298 /* Models */,
 				70C4139726D8B938004D17A9 /* ViewModels */,
 				84C5D07C26D797B400B59F36 /* Alamofire.xcodeproj */,
 				84C5D07B26D7978800B59F36 /* Controllers */,
@@ -649,6 +660,7 @@
 				7018BD5B26D99D380053EFE6 /* Constants.swift in Sources */,
 				84C5D04B26D78EF500B59F36 /* SceneDelegate.swift in Sources */,
 				70C413EC26D8DB36004D17A9 /* HomeViewController.swift in Sources */,
+				700CDF6E26D9EAD000BB0298 /* File.swift in Sources */,
 				70CA8D8826D9DBCB00E1A18E /* ChatViewController.swift in Sources */,
 				70C413B326D8BC35004D17A9 /* NewConversationViewController.swift in Sources */,
 				70C413AF26D8BC22004D17A9 /* ProfileViewController.swift in Sources */,

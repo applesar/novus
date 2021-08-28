@@ -27,6 +27,14 @@ class NewConversationViewController: UIViewController {
 
     }
 
+    @IBAction func tappedYesButton(_ sender: UIButton) {
+        if sender.tag==2201 {
+            anonymous = 0
+        } else {
+            anonymous = 1
+        }
+        performSegue(withIdentifier: "AnnieChatSegue", sender: nil)
+    }
     /*
     // MARK: - Navigation
 

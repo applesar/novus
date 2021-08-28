@@ -6,18 +6,59 @@
 //
 
 import UIKit
+import Alamofire
 
 class ChatViewController: UIViewController {
 
     
     @IBOutlet weak var chatView: UIView!
-    
     @IBOutlet weak var chatTextField: UITextField!
     @IBOutlet weak var sendMessageButton: UIButton!
+    
+    var annieResponses: Responses?
+    let baseURL = "https://www.pasakay-puv.net/get_response.php?"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        getResponse(chat: "" )
+    }
+    
+    func annieReply() {
+        var message: String
+        switch (lang) {
+        case .ph:
+            message = annieResponses?.list[0].response ?? ""
+        case .en:
+            message = annieResponses?.list[0].response2 ?? ""
+         default:
+            message = annieResponses?.list[0].response3 ?? ""
+        }
+        addNewChat(0, message)
+    }
+    
+    func getResponse(chat: String) {
+        let chatEncoded = chat.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed) ?? ""
+        
+        var from: String
+        if let ff = (annieResponses?.list[0].id) {
+            from = ff
+        } else {
+            from = "0"
+        }
+            
+        let url = baseURL + "l=wjc934wh&fid=\(from)&k1=" +  chatEncoded + "&k2=" + chatEncoded
+        print(url)
+        AF.request(url)
+            .validate()
+            .responseDecodable(of: (Responses?.self)) { (response) in guard let responsList = response.value else {
+                   print("Error")
+                return }
+                self.annieResponses = responsList
+                print(self.annieResponses?.list ?? "")
+                self.annieReply()
+            }
     }
     
     func moveUpElements(_ n: CGFloat) {
@@ -29,16 +70,22 @@ class ChatViewController: UIViewController {
         }
     }
     
+    func adjustUITextViewHeight(arg : UITextView)
+    {
+        arg.translatesAutoresizingMaskIntoConstraints = true
+        arg.sizeToFit()
+        arg.isScrollEnabled = false
+    }
     
     func addNewChat(_ actor: Int, _ text: String) {
-        moveUpElements(72)
+        moveUpElements(122)
         
-        let label = UITextView(frame: CGRect(x: 0, y: 0, width: 320, height: 52))
+        let label = UITextView(frame: CGRect(x: 0, y: 0, width: 320, height: 102))
         label.textContainerInset = UIEdgeInsets(top: 5, left: 10, bottom: 5, right: 10);
         label.font = .systemFont(ofSize: 18)
             //UIFont(name: label.font?.fontName ?? "System", size: 36)
         
-        let xActor = CGFloat(actor * 80) + 150
+        let xActor = CGFloat(actor * 70) + 180
         label.center = CGPoint(x: xActor, y: 690)
         var bgColor: UIColor?
         if (actor==1) {
@@ -56,9 +103,9 @@ class ChatViewController: UIViewController {
 
         }
         label.text = text
-        self.chatView.addSubview(label)
+        label.layer.cornerRadius = label.frame.height/3
+        
     }
-    
 
     @IBAction func tappedSendMessageButton(_ sender:  UIButton) {
         guard let message = self.chatTextField!.text else {
@@ -66,7 +113,9 @@ class ChatViewController: UIViewController {
         }
         if message > "" {
             addNewChat(1, message)
+            self.chatTextField.text = ""
         }
+        getResponse(chat: message)
     }
     
     /*
