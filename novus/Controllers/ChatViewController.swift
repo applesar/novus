@@ -76,7 +76,7 @@ class ChatViewController: UIViewController {
     }
     
     func addNewChat(_ actor: Int, _ text: String) {
-        let estHt = (Int(text.count/26) * 26) + 20
+        let estHt = (Int(text.count/26) * 26) + 26
        
         moveUpElements(125)
 
