@@ -505,7 +505,7 @@ interact anonymously?</string>
                                         </state>
                                         <connections>
                                             <action selector="tappedYesButton:" destination="7a2-mm-gZR" eventType="touchUpInside" id="mEC-7E-j9h"/>
-                                            <segue destination="Yau-YM-JZ1" kind="presentation" id="6Zq-BP-8qA"/>
+                                            <segue destination="Yau-YM-JZ1" kind="presentation" identifier="AnnieChatSegue" id="6Zq-BP-8qA"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="2201" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BNq-ev-Gkq">
@@ -575,8 +575,8 @@ interact anonymously?</string>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vYk-vw-2tJ">
                                 <rect key="frame" x="0.0" y="754" width="414" height="88"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Send message" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1XV-v2-5ne">
-                                        <rect key="frame" x="53" y="19" width="313" height="34"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Send message" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1XV-v2-5ne">
+                                        <rect key="frame" x="55" y="19" width="313" height="34"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="313" id="VuW-W1-Sqm"/>
                                             <constraint firstAttribute="height" constant="34" id="p23-9n-r12"/>
@@ -584,15 +584,15 @@ interact anonymously?</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UgD-kD-fcC">
-                                        <rect key="frame" x="379" y="19" width="21" height="34"/>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UgD-kD-fcC">
+                                        <rect key="frame" x="381" y="19" width="21" height="34"/>
                                         <state key="normal" image="paperplane" catalog="system"/>
                                         <connections>
-                                            <action selector="tappedSendMessageButton:" destination="Yau-YM-JZ1" eventType="touchUpInside" id="pBw-AF-4pq"/>
+                                            <action selector="tappedSendMessage:" destination="Yau-YM-JZ1" eventType="touchUpInside" id="8ni-RM-4at"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pVO-YH-cV5">
-                                        <rect key="frame" x="21" y="27" width="20" height="22"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pVO-YH-cV5">
+                                        <rect key="frame" x="21" y="27" width="22" height="22"/>
                                         <fontDescription key="fontDescription" type="system" weight="black" pointSize="18"/>
                                         <state key="normal" image="paperclip" catalog="system">
                                             <color key="titleColor" systemColor="labelColor"/>
@@ -626,9 +626,9 @@ interact anonymously?</string>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="chatTextField" destination="1XV-v2-5ne" id="xde-15-GnK"/>
-                        <outlet property="chatView" destination="BhB-Xf-H20" id="Bas-ki-lbd"/>
-                        <outlet property="sendMessageButton" destination="UgD-kD-fcC" id="QMj-60-P0S"/>
+                        <outlet property="chatTextField" destination="1XV-v2-5ne" id="hse-B1-uRS"/>
+                        <outlet property="chatView" destination="BhB-Xf-H20" id="YIC-AY-eDj"/>
+                        <outlet property="sendMessageButton" destination="UgD-kD-fcC" id="xWM-fV-BID"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uyx-t8-tle" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

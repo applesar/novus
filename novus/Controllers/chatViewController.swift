@@ -10,11 +10,10 @@ import Alamofire
 
 class ChatViewController: UIViewController {
 
-    
+
     @IBOutlet weak var chatView: UIView!
     @IBOutlet weak var chatTextField: UITextField!
     @IBOutlet weak var sendMessageButton: UIButton!
-    
     var annieResponses: Responses?
     let baseURL = "https://www.pasakay-puv.net/get_response.php?"
     
@@ -105,9 +104,13 @@ class ChatViewController: UIViewController {
         label.text = text
         label.layer.cornerRadius = label.frame.height/3
         
+        //adjustUITextViewHeight(arg: label)
+        self.chatView.addSubview(label)
     }
+    
 
-    @IBAction func tappedSendMessageButton(_ sender:  UIButton) {
+
+    @IBAction func tappedSendMessage(_ sender: UIButton) {
         guard let message = self.chatTextField!.text else {
             return
         }
@@ -117,7 +120,6 @@ class ChatViewController: UIViewController {
         }
         getResponse(chat: message)
     }
-    
     /*
     // MARK: - Navigation
 
