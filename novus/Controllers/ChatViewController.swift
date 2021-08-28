@@ -48,14 +48,13 @@ class ChatViewController: UIViewController {
         }
         	
         let url = baseURL + "l=wjc934wh&fid=\(from)&k1=" +  chatEncoded + "&k2=" + chatEncoded
-        print(url)
+        
         AF.request(url)
             .validate()
             .responseDecodable(of: (Responses?.self)) { (response) in guard let responsList = response.value else {
                    print("Error")
                 return }
                 self.annieResponses = responsList
-                print(self.annieResponses?.list ?? "")
                 self.annieReply()
             }
     }
@@ -77,15 +76,17 @@ class ChatViewController: UIViewController {
     }
     
     func addNewChat(_ actor: Int, _ text: String) {
-        moveUpElements(122)
-        
-        let label = UITextView(frame: CGRect(x: 0, y: 0, width: 320, height: 102))
+        let estHt = (Int(text.count/30) * 26) + 13
+       
+        moveUpElements(125)
+
+        let label = UITextView(frame: CGRect(x: 0, y: 0, width: 320, height: estHt))
         label.textContainerInset = UIEdgeInsets(top: 5, left: 10, bottom: 5, right: 10);
         label.font = .systemFont(ofSize: 18)
-            //UIFont(name: label.font?.fontName ?? "System", size: 36)
+	            //UIFont(name: label.font?.fontName ?? "System", size: 36)
         
         let xActor = CGFloat(actor * 70) + 180
-        label.center = CGPoint(x: xActor, y: 690)
+        label.center = CGPoint(x: xActor, y: 720)
         var bgColor: UIColor?
         if (actor==1) {
             bgColor = UIColor(red:0.87, green:0.50, blue: 0, alpha: 1.0)
@@ -102,11 +103,11 @@ class ChatViewController: UIViewController {
 
         }
         label.text = text
-        label.layer.cornerRadius = label.frame.height/3
+        label.layer.cornerRadius = 10
         
         //adjustUITextViewHeight(arg: label)
         self.chatView.addSubview(label)
-    }
+   }
     
 
     @IBAction func tappedSendMessage(_ sender: UIButton) {
