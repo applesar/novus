@@ -7,20 +7,28 @@
 
 import Foundation
 
-public var language="PH"
+public var lang: Languages = .ph
 public var test="test"
 public var chain=[Int]()
 public var anonymous=0
-
-struct Response: Decodable {
-    let id: Int
-    let from_id: Int
-    let keyword: String
-    let keyword2: String
-    let response: String
-    let response2: String
-    let response3: String
-    let comment: String
+public enum Languages: Int {
+    case ph = 1
+    case en = 2
+    case gy = 3
 }
 
 
+struct Response: Decodable {
+    let id: String?
+    let from_id: String?
+    let keyword: String?
+    let keyword2: String?
+    let response: String?
+    let response2: String?
+    let response3: String?
+    let comment: String?
+}
+
+struct Responses: Decodable {
+    let list: [Response]
+}
