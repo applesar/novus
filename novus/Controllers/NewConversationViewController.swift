@@ -9,12 +9,23 @@ import UIKit
 
 class NewConversationViewController: UIViewController {
 
+    
+    @IBOutlet weak var yesButton: UIButton!
+    
+    @IBOutlet weak var noButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        setUpElements()
 
         // Do any additional setup after loading the view.
     }
-    
+    func setUpElements(){
+        let r = self.yesButton.frame.height/4
+        self.yesButton.layer.cornerRadius = r
+        self.noButton.layer.cornerRadius = r
+
+    }
 
     /*
     // MARK: - Navigation

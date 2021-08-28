@@ -49,8 +49,6 @@ class Utilities {
         label.textColor = UIColor.init(red: 16/255, green: 23/255, blue: 49/255, alpha: 1)
     }
     
-    
-    
     static func styleFilledButton(_ button:UIButton) {
         
         // Filled rounded corner style
